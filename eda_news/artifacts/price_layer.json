@@ -1,0 +1,35 @@
+{
+  "excluded_tapes": 119,
+  "excluded_tickers": 117,
+  "cut_tapes": 124,
+  "dropped_days": 102708,
+  "event_days_total": 95904,
+  "event_days_no_window": 5429,
+  "unexplained_total": 15212,
+  "unexplained_share": 0.000491,
+  "unexplained_in_window": 0,
+  "bars_in_layer": 30981355,
+  "by_feed": [
+    {
+      "source": "fnspid",
+      "n": 12234,
+      "ni": 1088
+    },
+    {
+      "source": "hf_rth1d",
+      "n": 1640,
+      "ni": 656
+    },
+    {
+      "source": "alpaca_sip",
+      "n": 1245,
+      "ni": 601
+    },
+    {
+      "source": "moex_iss",
+      "n": 93,
+      "ni": 60
+    }
+  ],
+  "detector": "|log r| > 2"
+}

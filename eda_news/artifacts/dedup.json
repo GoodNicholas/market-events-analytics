@@ -1,0 +1,25 @@
+{
+  "docs_total": 59360993,
+  "after_exact": 49042905,
+  "after_near": 55651414,
+  "clusters": 9840199,
+  "by_method": {
+    "minhash": {
+      "groups": 4861670,
+      "extra": 1902727,
+      "threshold": 0.8999999761581421
+    },
+    "exact": {
+      "groups": 4978529,
+      "extra": 1806852,
+      "threshold": 1.0
+    }
+  },
+  "mega_cluster_empty_sha": 10318088,
+  "minhash": {
+    "perm": 128,
+    "shingle": 5,
+    "jaccard": 0.9,
+    "window_days": 3
+  }
+}

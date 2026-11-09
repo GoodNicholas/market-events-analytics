@@ -1,0 +1,15 @@
+market,source_class,precision,events
+US,fnspid,только дата,25165
+RU,lenta,только дата,801086
+US,fnspid,минута,12720604
+CN,cn_market_corpus_bonds,только дата,6818
+US,ccnews,минута,10890997
+RU,lenta,минута,577004
+RU,ccnews,минута,6564644
+US,ccnews,только дата,30
+CN,cn_market_corpus,только дата,1146245
+EU,ccnews,минута,16241105
+OTHER,ccnews,минута,6207223
+CN,ccnews,минута,1277912
+EU,ccnews,только дата,48
+OTHER,ccnews,только дата,35

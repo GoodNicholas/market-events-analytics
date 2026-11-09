@@ -1,0 +1,380 @@
+{
+  "generated_at": "2026-11-10T00:55:27",
+  "git_commit": "a99acb9-dirty",
+  "dev_end": "2025-06-30",
+  "demo": false,
+  "artifacts": {
+    "layers": {
+      "file": "layers.csv",
+      "rows": 9,
+      "producer": "mea.storage.Lake: count(*) по слоям",
+      "mtime": "2026-11-10T00:55:09"
+    },
+    "attribution_funnel": {
+      "file": "attribution_funnel.json",
+      "rows": 2,
+      "producer": "data/cache/stats03/attribution_funnel.json",
+      "mtime": "2026-11-10T00:55:09"
+    },
+    "time_precision": {
+      "file": "time_precision.csv",
+      "rows": 14,
+      "producer": "data/cache/stats02/timing.json: precision",
+      "mtime": "2026-11-10T00:55:09"
+    },
+    "price_layer": {
+      "file": "price_layer.json",
+      "rows": 12,
+      "producer": "reports/adj_prices/qa.json + reference/{price_quality,tape_cuts}",
+      "mtime": "2026-11-10T00:55:09"
+    },
+    "seam_returns": {
+      "file": "seam_returns.csv",
+      "rows": 4,
+      "producer": "замер шва лент (13 134 перехода, 7 743 бумаги), глава 05 пункт 1",
+      "mtime": "2026-11-10T00:55:09"
+    },
+    "targets": {
+      "file": "targets.json",
+      "rows": 6,
+      "producer": "reports/night/z_targets.log + mea.eda.targets",
+      "mtime": "2026-11-10T00:55:09"
+    },
+    "facts_ch01_04": {
+      "file": "facts_ch01_04.csv",
+      "rows": 91,
+      "producer": "mea.eda.stats.{01..04}.run(lake).facts, значения разобраны в числа",
+      "mtime": "2026-11-10T00:55:16"
+    },
+    "sentiment_agreement": {
+      "file": "sentiment_agreement.csv",
+      "rows": 149,
+      "producer": "data/cache/stats04/agree_tab.json",
+      "mtime": "2026-11-10T00:55:16"
+    },
+    "sentiment_dist": {
+      "file": "sentiment_dist.csv",
+      "rows": 60,
+      "producer": "{doc_sent} join {events_v2}: гистограмма",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "event_types": {
+      "file": "event_types.csv",
+      "rows": 28,
+      "producer": "data/cache/stats04/type_market.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "tails": {
+      "file": "tails.csv",
+      "rows": 25,
+      "producer": "reports/stats/05_market/p1_tails_daily.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "longmemory": {
+      "file": "longmemory.csv",
+      "rows": 14,
+      "producer": "reports/stats/05_market/p2_dep_daily.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "volume_vol": {
+      "file": "volume_vol.csv",
+      "rows": 3,
+      "producer": "reports/stats/05_market/p3_volume_daily.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "intraday_profile": {
+      "file": "intraday_profile.csv",
+      "rows": 480,
+      "producer": "reports/stats/05_market/p4_summary_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "intraday_sessions": {
+      "file": "intraday_sessions.csv",
+      "rows": 16,
+      "producer": "reports/stats/05_market/p4_summary_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "open_mult_by_year": {
+      "file": "open_mult_by_year.csv",
+      "rows": 20,
+      "producer": "reports/stats/05_market/p4_summary_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "weekday": {
+      "file": "weekday.csv",
+      "rows": 10,
+      "producer": "reports/stats/05_market/p7_calendar_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "calendar_effects": {
+      "file": "calendar_effects.csv",
+      "rows": 12,
+      "producer": "reports/stats/05_market/p7_calendar_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "exdate": {
+      "file": "exdate.csv",
+      "rows": 2,
+      "producer": "reports/stats/05_market/p7_exdate_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "ch06_contrast": {
+      "file": "ch06_contrast.csv",
+      "rows": 20,
+      "producer": "reports/stats/06_joint/p3_contrast_*.json: rows по cell",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "ch06_dose": {
+      "file": "ch06_dose.csv",
+      "rows": 24,
+      "producer": "reports/stats/06_joint/p5_dose_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "ch06_newsdays_by_year": {
+      "file": "ch06_newsdays_by_year.csv",
+      "rows": 22,
+      "producer": "reports/stats/06_joint/p2_share.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "ch06_bigmove": {
+      "file": "ch06_bigmove.csv",
+      "rows": 10,
+      "producer": "reports/stats/06_joint/p6_calendar_*.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "ch06_timeknown": {
+      "file": "ch06_timeknown.csv",
+      "rows": 4,
+      "producer": "reports/stats/06_joint/p7_time_known.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "h1b_diagnostics": {
+      "file": "h1b_diagnostics.csv",
+      "rows": 8,
+      "producer": "reports/h01/h1b_us_diag.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "h1b_wording": {
+      "file": "h1b_wording.json",
+      "rows": 2,
+      "producer": "reports/h01/h1b_us_diag.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "h15_items": {
+      "file": "h15_items.csv",
+      "rows": 7,
+      "producer": "reports/h15/h15_dev.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "h16_horizons": {
+      "file": "h16_horizons.csv",
+      "rows": 3,
+      "producer": "reports/h16/h16_dev.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "h16_gap": {
+      "file": "h16_gap.json",
+      "rows": 9,
+      "producer": "reports/h16/h16_dev.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "h19_quintiles": {
+      "file": "h19_quintiles.csv",
+      "rows": 5,
+      "producer": "reports/h19/h19_dev.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "hypotheses": {
+      "file": "hypotheses.csv",
+      "rows": 43,
+      "producer": "reports/h01..h19/*.json: по строке на проверку, вердикт по механическому правилу",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "registry_stats": {
+      "file": "registry_stats.json",
+      "rows": 8,
+      "producer": "reports/tests_registry.csv",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c1_points": {
+      "file": "c1_points.parquet",
+      "rows": 164807,
+      "producer": "mea.ml.probe_map: координаты UMAP",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c1_cluster_monthly": {
+      "file": "c1_cluster_monthly.csv",
+      "rows": 4327,
+      "producer": "mea.ml.probe_map: кластер x месяц",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c1_clusters": {
+      "file": "c1_clusters.csv",
+      "rows": 60,
+      "producer": "mea-ml reports/ml/01_event_map.json + центроиды по c1_points",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c1_params": {
+      "file": "c1_params.json",
+      "rows": 10,
+      "producer": "mea-ml reports/ml/01_event_map.json: info",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c2_results": {
+      "file": "c2_results.csv",
+      "rows": 8,
+      "producer": "mea-ml reports/ml/02_gbm_*.json: res[*].real",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c2_importance": {
+      "file": "c2_importance.csv",
+      "rows": 16,
+      "producer": "mea-ml reports/ml/02_gbm_*.json: gain_share/perm_drop",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c3_summary": {
+      "file": "c3_summary.json",
+      "rows": 10,
+      "producer": "mea-ml reports/ml/03_types.json",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c3_per_class": {
+      "file": "c3_per_class.csv",
+      "rows": 5,
+      "producer": "mea-ml reports/ml/03_types.json: f1_by_class",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c3_confusion": {
+      "file": "c3_confusion.csv",
+      "rows": 25,
+      "producer": "mea-ml reports/ml/03_types.json: confusion",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "c3_funnel": {
+      "file": "c3_funnel.csv",
+      "rows": 7,
+      "producer": "mea-ml reports/ml/03_types.json: stats",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "acf": {
+      "file": "acf.csv",
+      "rows": 56,
+      "producer": "reports/stats/05_market/p2_dep_daily.json: лаги 1/5/20/40",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "controls": {
+      "file": "controls.csv",
+      "rows": 11,
+      "producer": "docs/MEASUREMENT_RULES.md + mea.eda.controls",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "not_measured": {
+      "file": "not_measured.csv",
+      "rows": 12,
+      "producer": "MEA_RESULTS.md §7, составлено вручную",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "statements": {
+      "file": "statements.json",
+      "rows": 8,
+      "producer": "MEA_RESULTS.md §8",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "case_prices": {
+      "file": "case_prices.csv",
+      "rows": 2632,
+      "producer": "{adj_prices} по MOEX:SBER",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "zipf": {
+      "file": "zipf.csv",
+      "rows": 15000,
+      "producer": "data/cache/stats02/lexicon.json: zipf_curve",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "heaps": {
+      "file": "heaps.csv",
+      "rows": 33,
+      "producer": "data/cache/stats02/lexicon.json: sample + heaps_cells",
+      "mtime": "2026-11-10T00:55:18"
+    },
+    "docs_monthly": {
+      "file": "docs_monthly.csv",
+      "rows": 459,
+      "producer": "{docs}: region x source_class по месяцам",
+      "mtime": "2026-11-10T00:55:20"
+    },
+    "docs_by_source": {
+      "file": "docs_by_source.csv",
+      "rows": 4,
+      "producer": "{docs}: топ-20 источников на рынок",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "dedup": {
+      "file": "dedup.json",
+      "rows": 7,
+      "producer": "data/cache/stats02/dupes.json: by_method",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "mentions_lorenz": {
+      "file": "mentions_lorenz.csv",
+      "rows": 410,
+      "producer": "data/cache/stats03/concentration.json: lorenz (metric=all)",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "minute_acf": {
+      "file": "minute_acf.csv",
+      "rows": 4,
+      "producer": "reports/stats/05_market/p2_dep_minute_*.json",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "aggregation_gaussianity": {
+      "file": "aggregation_gaussianity.csv",
+      "rows": 12,
+      "producer": "reports/stats/05_market/p1_tails_minute_*.json: agg_curve",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "h3_terciles": {
+      "file": "h3_terciles.csv",
+      "rows": 6,
+      "producer": "reports/h03/*_event.json: cuts",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "h13_tiers": {
+      "file": "h13_tiers.csv",
+      "rows": 8,
+      "producer": "reports/h13/*_event_H2_exact.json: full + trend_full",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "price_jumps_by_year": {
+      "file": "price_jumps_by_year.csv",
+      "rows": 74,
+      "producer": "reports/adj_prices/unexplained_moves.csv",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "registry_timeline": {
+      "file": "registry_timeline.csv",
+      "rows": 5,
+      "producer": "reports/tests_registry.csv: по датам",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "c1_titles": {
+      "file": "c1_titles.csv",
+      "rows": 600,
+      "producer": "mea-ml reports/ml/01_event_map.json: titles (без doc_id и даты - их зонд не сохраняет)",
+      "mtime": "2026-11-10T00:55:22"
+    },
+    "case_events": {
+      "file": "case_events.csv",
+      "rows": 44009,
+      "producer": "{events_v2} + {docs} + {doc_sent} по MOEX:SBER",
+      "mtime": "2026-11-10T00:55:27"
+    },
+    "missing_notes": {
+      "file": "missing_notes.csv",
+      "rows": 10,
+      "producer": "составлено вручную по итогу экспорта",
+      "mtime": "2026-11-10T00:55:27"
+    }
+  }
+}

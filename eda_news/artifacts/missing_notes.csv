@@ -1,0 +1,11 @@
+artifact,why
+c1_points,координат UMAP в выходе зонда C1 нет: сохраняются только агрегаты по кластерам. Нужен перепрогон probe_map с записью координат
+c1_titles,"заголовки у кластера есть полем titles в 01_event_map.json, но без doc_id и даты - витрина ждёт их построчно"
+event_window_profile,"требует расчёта профиля -10..+10 по панели с бутстрапом по датам: отдельное задание, не экспорт"
+case_neighbors,нужен поиск по эмбеддингам bge-m3: отдельное задание
+case_reaction,"то же, что event_window_profile, по одной бумаге"
+docs_monthly,"лёгкий, но не написан в этом круге"
+zipf/heaps/doc_length/mentions_lorenz/docs_by_source/dedup,"в кэшах глав 01-02 лежат, но разбор полей не сделан в этом круге"
+minute_acf/aggregation_gaussianity/kurtosis_sensitivity/gainloss_asym,"лежат в p1/p2 главы 05, разбор не сделан в этом круге"
+h3_terciles/h13_tiers,"лежат в reports/h03, h13 - разбор не сделан"
+price_jumps_by_year/registry_timeline/c1_cluster_monthly/c3_funnel,"P2/P3, не делались"
